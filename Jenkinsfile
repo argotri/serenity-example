@@ -6,6 +6,7 @@ pipeline {
         stage('Chrome 83') {
           steps {
             sh 'mvn clean verify -Dbrowser=chrome -Dversion=83.0'
+            sh 'echo whoami'
           }
         }
 
